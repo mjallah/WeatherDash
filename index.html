@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Weather Dashboard</title>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <span class="navbar-brand mb-0 h1 w-100 text-center">Weather Dashboard</span>
+    </nav>
+
+    <main class="container">
+
+        <div class="row">
+            <div class="col-sm-4 bg-light">
+                <h4 class="pt-1">Search for a City:</h4>
+
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="search-city">
+                    <div class="input-group-append">
+                        <button class=" btn bg-primary text-light" id="search-button">Search</button>
+                    </div>
+                </div>
+                <!--search history-->
+                <button class=" btn btn-primary" type="button" id="clear-history">Clear history</button>
+                <ul class="list-group">
+
+                </ul>
+            </div>
+            <div class="col-sm-8">
+                <div class="row ml-2 border border-dark rounded">
+                    <div class="col-sm-12" id="current-weather">
+                        <h3 class="city-name mb-1 mt-2 bolder" id="current-city"></h3>
+                        <p>Temperature: <span class="current" id="temp"></span></p>
+                        <p>Humidity: <span class="current" id="humidity"></span></p>
+                        <p>Wind Speed: <span class="current" id="wind"></span></p>
+                        <p>UV index: <span class="current rounded py-2 px-2 text-white" id="uv-index"></span></p>
+                    </div>
+                </div>
+                <div class="col-sm-12" id="future-weather">
+                    <h3>5-Day Forecast:</h3>
+                    <div class="row text-light">
+                        <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded">
+                            <p id="Date0"></p>
+                            <p id="Img0"></p>
+                            <p>Temp: <span id="Temp0"></span></p>
+                            <p>Humidity: <span id="Humidity0"></span></p>
+                        </div>
+                        <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded">
+                            <p id="Date1"></p>
+                            <p id="Img1"></p>
+                            <p>Temp: <span id="Temp1"></span></p>
+                            <p>Humidity: <span id="Humidity1"></span></p>
+                        </div>
+                        <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded">
+                            <p id="Date2"></p>
+                            <p id="Img2"></p>
+                            <p>Temp: <span id="Temp2"></span></p>
+                            <p>Humidity: <span id="Humidity2"></span></p>
+                        </div>
+                        <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded">
+                            <p id="Date3"></p>
+                            <p id="Img3"></p>
+                            <p>Temp: <span id="Temp3"></span></p>
+                            <p>Humidity: <span id="Humidity3"></span></p>
+                        </div>
+                        <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded">
+                            <p id="Date4"></p>
+                            <p id="Img4"></p>
+                            <p>Temp: <span id="Temp4"></span></p>
+                            <p>Humidity: <span id="Humidity4"></span></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
